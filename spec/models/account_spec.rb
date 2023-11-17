@@ -70,4 +70,12 @@ RSpec.describe Account, type: :model do
     )
     expect(Account1.errors[:password]).to_not be_empty
   end
+  # it 'is not valid if password does not contain at least one integer' do
+  #   Account1 = Account.create(
+  #     username: 'Seis',
+  #     password: 'Six',
+  #     email: 'seis6@aol.com'
+  #   )
+  #   expect(account.errors[:password]).to_not be_empty
+  # end
 end
